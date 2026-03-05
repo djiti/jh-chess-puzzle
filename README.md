@@ -15,8 +15,10 @@ However, we could not resist and used a [property](https://www.programiz.com/pyt
 
 # Running
 
+## Python
+
 ```
-./chess.py 
+./chess.py
 *********************
 In 41 moves, visiting 1259 layouts (excluding the final one):
 
@@ -42,7 +44,18 @@ In 41 moves, visiting 1259 layouts (excluding the final one):
 [...]
 ```
 
+## Go
+
+```
+go run chess.go
+*********************
+In 41 moves, visiting 1259 layouts (excluding the final one):
+[...]
+```
+
 # Testing
+
+## Python
 
 ```
 python3 -m pytest
@@ -53,8 +66,19 @@ Or if you are in a hurry and installed `pytest-xdist`:
 python3 -m pytest -n 3
 ```
 
+## Go
+
+```
+go test ./...
+```
+
+For verbose output:
+```
+go test -v ./...
+```
+
 # Developing
 
-Everybody can just use their favorite Python IDE.
+Everybody can just use their favorite Python or Go IDE.
 
-"Geeks" can use Docker and VS Code's [devcontainer](https://code.visualstudio.com/docs/devcontainers/containers) extension.
+"Geeks" can use Docker and VS Code's [devcontainer](https://code.visualstudio.com/docs/devcontainers/containers) extension. The devcontainer includes both Python and Go toolchains.
