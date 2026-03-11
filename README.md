@@ -81,4 +81,14 @@ go test -v ./...
 
 Everybody can just use their favorite Python or Go IDE.
 
-"Geeks" can use Docker and VS Code's [devcontainer](https://code.visualstudio.com/docs/devcontainers/containers) extension. The devcontainer includes both Python and Go toolchains.
+"Geeks" can use Docker and VS Code's [devcontainer](https://code.visualstudio.com/docs/devcontainers/containers) extension. The devcontainer includes both Python and Go toolchains, as well as the [Claude](https://claude.ai/code) extension.
+
+## Configuring the Claude extension
+
+After the devcontainer starts, the Claude extension will be installed but needs an API key to authenticate:
+
+1. Open the Claude panel in the VS Code Activity Bar (the Claude icon)
+2. Click **Sign in** and follow the prompts — or, to use an API key directly:
+   - Open the VS Code command palette (`Ctrl+Shift+P` / `Cmd+Shift+P`)
+   - Run **Claude: Open Settings**
+   - Enter your API key from [console.anthropic.com](https://console.anthropic.com)

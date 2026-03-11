@@ -30,7 +30,8 @@
 			"extensions": [
 				"ms-python.black-formatter",
 				"streetsidesoftware.code-spell-checker",
-				"golang.go"
+				"golang.go",
+				"anthropic.claude-code"
 			]
 		}
 	}
